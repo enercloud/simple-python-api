@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, abort
+from flask import Flask, jsonify, abort, Response
 
 days = [
     {"id": 1, "name": "Monday"},
@@ -11,6 +11,11 @@ days = [
 ]
 
 app = Flask(__name__)
+
+
+@app.route("/healthz", methods=["GET"])
+def healthz():
+    return "Healthy"
 
 
 @app.route("/", methods=["GET"])
