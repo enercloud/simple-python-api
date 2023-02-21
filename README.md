@@ -7,7 +7,7 @@ A super simple RESTful api created using Flask. The idea is to have a simple api
 Requirements:
 
 ```sh
-python -m venv ./venv
+python -m venv .venv
 source .venv/bin/activate
 ```
 
@@ -19,10 +19,10 @@ pip install -r requirements.txt
 
 to get the dependencies.
 
-Finally run the api with
+Finally run the app with
 
 ```sh
-python api.py
+python app.py
 ```
 
 ## Example
